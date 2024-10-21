@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to buy car and guide to auto-repair-costs</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+            
+        }
+
+        h2 {
+            color: #343a40;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        img.featurette-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+
+        /* Animation Styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .featurette-heading {
+            animation: fadeIn 0.8s ease forwards;
+            opacity: 0; /* Initial state for fade-in effect */
+        }
+
+        .featurette-image {
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect for images */
+        .featurette-image:hover {
+            transform: scale(1.05); /* Slightly enlarge the image on hover */
+        }
+
+        /* Specific ID for the Benefits of Old Car image */
+/* Animation for old car image */
+#old-car-image {
+    animation: fadeIn 0.8s ease forwards;; /* Apply fade-in animation */
+    opacity: 0; 
+  ;                       
+    width: 274px;
+    transition: transform 0.3s ease;
+   ; 
+}
+
+/* Hover effect for zoom */
+#old-car-image:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+
+
+
+        /* Responsive Styles */
+        @media (min-width: 768px) {
+            .featurette {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+
+            .featurette-heading {
+                margin-bottom: 20px;
+            }
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+        .lead ,h2{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('partials/navbar1') %>
+
+    <main class="p-4">
+
+        <!-- Section 1: How to Buy a Car -->
+        <section id="buying-guide-overview" class="mb-4">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">How to Buy a Car. <span class="text-body-secondary"></span></h2>
+                    <p class="lead">Buying a car is a significant decision, and there are many factors to consider. This guide will walk you through the essential steps to ensure you make the right choice, whether you're buying new or used.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="/static/resourcesb.jpg" alt="Description of the image" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 1: Determine Your Budget -->
+        <section id="determine-budget" class="mb-4">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Step 1: Determine Your Budget 
+                        <span class="text-body-secondary"></span>
+                    </h2>
+                    <p class="lead">Decide how much you can afford, including the purchase price, taxes, insurance, and ongoing maintenance costs.</p>
+                    <ul>
+                        <li>Monthly Income: Calculate how much you can comfortably allocate from your income towards car payments.</li>
+                        <li>Down Payment: Decide how much upfront cash you can afford to reduce loan amounts.</li>
+                        <li>Loan Terms: Check interest rates and loan terms that can affect your monthly payments.</li>
+                        <li>Insurance Costs: Factor in insurance premiums based on the type of car.</li>
+                        <li>Maintenance & Repairs: Consider potential maintenance and repair costs, especially for used cars.</li>
+                        <li>Fuel Efficiency: Account for fuel costs based on your driving habits.</li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <img src="/static/resourcesd.avif" alt="Description of the image" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 2: Benefits of Old Car -->
+        <section id="benefits-of-old-car" class="mb-4">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Step 2: Benefits of Old Car <span class="text-body-secondary"></span></h2>
+                    <p class="lead">The benefits of buying an old car include lower upfront costs, reduced insurance premiums, and slower depreciation compared to new models. Older cars can still be reliable if they are well-maintained and may come with proven performance records. Additionally, they often have simpler technology, making repairs and maintenance more affordable.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img id="old-car-image" src="/static/resourceso.avif" alt="Description of the image" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 3: Benefits of New Car -->
+        <section id="benefits-of-new-car" class="mb-4">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Step 3: Benefits of New Car 
+                        <span class="text-body-secondary"></span>
+                    </h2>
+                    <p class="lead">Buying a new car offers several benefits, including the latest technology, enhanced safety features, and better fuel efficiency. New cars come with manufacturer warranties, reducing repair costs in the early years. You can also customize a new car to your preferences and enjoy peace of mind knowing it has no previous wear or history of issues. Additionally, newer models are often more environmentally friendly and have higher resale value in the future.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="/static/rsourcesn.webp" alt="Description of the image" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Guide to Auto Repair Costs -->
+        <section id="auto-repair-costs" class="mb-4">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Guide to Auto Repair Costs <span class="text-body-secondary"></span></h2>
+                    <p class="lead">Understanding auto repair costs is essential for every car owner. This guide provides insights into common repair expenses you might encounter.</p>
+                    <ul>
+                        <li>Labor Costs: A significant portion of repair costs, as mechanics charge hourly rates based on experience and location.</li>
+                        <li>Parts Costs: Varies depending on whether you're using original equipment manufacturer (OEM) parts or aftermarket parts. OEM parts are usually more expensive.</li>
+                        <li>Type of Repair: Simple repairs, like oil changes or brake pad replacements, cost less, while complex engine or transmission repairs are more expensive.</li>
+                        <li>Vehicle Make and Model: Luxury or less common vehicles often have higher repair costs due to specialized parts and services.</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="/static/resourcesg.jpg" alt="Description of the image" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Repair Costs -->
+        <section id="common-repair-costs" class="mb-4">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Common Auto Repair Costs
+                        <span class="text-body-secondary"></span>
+                    </h2>
+                    <p class="lead">Here are some of the most common auto repairs and their estimated costs:</p>
+                    <ul>
+                        <li>Oil Change: $35 - $75 depending on oil type and location.</li>
+                        <li>Brake Pad Replacement: $100 - $300 per axle, depending on the vehicle and pad quality.</li>
+                        <li>Tire Replacement: $50 - $200 per tire, depending on size and brand.</li>
+                        <li>Battery Replacement: $70 - $200, depending on battery type and warranty.</li>
+                        <li>Engine Tune-Up: $150 - $700, depending on the vehicle and service type.</li>
+                        <li>Transmission Repair: $1,000 - $3,500, depending on the vehicle and extent of damage.</li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <img src="/static/resourcesr.jpg" alt="Description of the image" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+        <!-- Tips to Save on Repairs -->
+        <section id="tips-to-save" class="mb-4">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Tips to Save on Repair Costs <span class="text-body-secondary"></span></h2>
+                    <p class="lead">Follow these tips to minimize your auto repair costs:</p>
+                    <ul>
+                        <li>Regular maintenance can prevent costly repairs.</li>
+                        <li>Shop around for quotes from different mechanics.</li>
+                        <li>Ask for referrals from friends or family.</li>
+                        <li>Learn to do minor repairs yourself.</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="/static/resourcestip.webp" alt="Description of the image" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+    </main>
+
+</div>
+<%- include('partials/footer1') %>
+
+</body>
+
+</html>

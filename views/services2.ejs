@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ai and services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for styling the page */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-section {
+            margin: 50px 0;
+        }
+
+        .production-title {
+            font-size: 3em;
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .production-text {
+            font-size: 1.2em;
+            color: #495057;
+            text-align: justify;
+            line-height: 1.6;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .section-title {
+            color: #007bff;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section-text {
+            text-align: justify;
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .d-flex {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .section-text {
+            margin-left: 30px;
+            max-width: 400px;
+            font-size: 22px;
+            font-family: ui-monospace;
+        }
+
+        .card {
+            width: 300px;
+        }
+
+        /* Animation for images */
+        .animated-image {
+            animation: slideIn 1s ease forwards;
+        }
+
+        .card-text{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <%- include('partials/navbar1') %>
+
+    <!-- Main Container -->
+    <div class="container main-section">
+        <h1 class="production-title">Other services</h1>
+
+        <h3 class="section-title">1. Performance Enhancements</h3>
+
+        <div class="d-flex align-items-start">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img id="image1" src="/static/servicesp.jpg" class="card-img-top animated-image" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Enhance your vehicle’s performance with upgrades to the engine</p>
+                    </div>
+                </div>
+            </div>
+            <p class="section-text">
+                Upgrading engines, suspensions, and exhaust systems for improved performance.
+                Aesthetic Modifications: Custom paint jobs, interior upgrades, and aftermarket accessories to
+                personalize vehicles.
+                Detailing Services.
+            </p>
+        </div>
+
+        <h3 class="section-title">2. Interior Detailing</h3>
+
+        <div class="d-flex align-items-start engine-production-container">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img id="image2" src="/static/services18.jpg" class="card-img-top animated-image" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Revitalize your vehicle's interior with comprehensive detailing services that clean</p>
+                    </div>
+                </div>
+            </div>
+            <p class="section-text">
+                Interior detailing of automobiles involves a thorough cleaning and restoration of a vehicle's
+                interior to enhance its appearance and maintain its condition. This meticulous process includes
+                vacuuming carpets and upholstery, shampooing surfaces.
+            </p>
+        </div>
+
+        <h3 class="section-title">3. Tire Installation and Rotation</h3>
+
+        <div class="d-flex align-items-start final-assembly-container">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img id="image6" src="/static/servicest.jpg" class="card-img-top animated-image" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Ensure your vehicle's safety and performance with our professional tire installation</p>
+                    </div>
+                </div>
+            </div>
+            <p class="section-text">
+                Mounting new tires and rotating existing ones for even wear.
+                Tire Balancing and Alignment: Ensuring tires are balanced and aligned correctly for better handling
+                and tire longevity.
+                Inspection and Emission Services:
+            </p>
+        </div>
+
+        <h3 class="section-title">4. Conducting Inspections</h3>
+
+        <div class="d-flex align-items-start manufacturing-container">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img id="image3" src="/static/servicescon.jpg" class="card-img-top animated-image" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Regular inspections are essential for vehicle safety and quality assurance.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="section-text">
+                Tests throughout the manufacturing process to ensure that vehicles meet safety and quality
+                standards. This includes checking for defects and performance issues.
+                Testing and Validation:
+            </p>
+        </div>
+
+        <h3 class="section-title">5. Eco-friendly</h3>
+
+        <div class="d-flex align-items-start engine-production-container">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img id="image4" src="/static/servicese.jpg" class="card-img-top animated-image" alt="">
+                    <div class="card-body">
+                        <p class="card-text">EVs are the future. Minimize environmental impact.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="section-text">
+                Incorporating eco-friendly practices, such as recycling materials, reducing energy consumption, and
+                utilizing sustainable resources in production. Powered entirely by electricity, EVs produce zero
+                tailpipe emissions and rely on rechargeable batteries. With advancements in battery technology, they
+                offer longer ranges and faster charging times.
+            </p>
+        </div>
+
+        <%- include('partials/footer1') %>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+
+</body>
+
+</html>

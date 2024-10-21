@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'Top 10 Safety Features in Modern Cars'</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+       body {
+    background-color: #f8f9fa; /* Light gray background for better contrast */
+    /* Smooth transition for background color change */
+    -webkit-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+
+.featurette {
+    margin-bottom: 4rem; 
+    opacity: 0; 
+    -webkit-transition: opacity 0.7s ease-in-out; 
+    transition: opacity 0.7s ease-in-out;
+    animation: fadeIn 1s forwards; 
+}
+
+.featurette-image {
+    border-radius: 0.5rem; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    -webkit-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Webkit transition */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.featurette-image:hover {
+    transform: scale(1.05); /* Scale up image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.section-title {
+    font-size: 2rem; 
+    margin-top: 2rem; 
+    margin-bottom: 1.5rem; 
+    color: burlywood; 
+    position: relative;
+    animation: slideIn 1s forwards; 
+}
+
+/* Add keyframes for fade-in and slide-in animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767.98px) {
+    .featurette-heading {
+        font-size: 1.5rem; 
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem; 
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <%- include('partials/navbar1') %>
+    <main class="container py-5">
+        <h1>Top features of car safety</h1>
+
+        <!-- automatic-emergency -->
+        <section id="automatic-emergency" class="mb-4">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">1. Automatic Emergency Braking <span class="text-body-secondary"></span></h2>
+                    <p class="lead">Automatic Emergency Braking (AEB) is a safety feature in modern cars designed to prevent or reduce the severity of collisions. It uses sensors like radar, cameras, or lasers to detect potential obstacles in the vehicle’s path. If the system determines that a collision is imminent, it can automatically apply the brakes to slow down or stop the car, helping avoid accidents.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="/static/resourcesemerg.jpg" alt="Description of the image" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Lane Keeping Assist -->
+        <section id="Lane-Keeping" class="mb-4">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1"> Lane Keeping Assist (LKA) <span class="text-body-secondary"></span></h2>
+                    <p class="lead">Lane Keeping Assist (LKA) is an advanced driver assistance feature that helps keep the vehicle centered in its lane. Using cameras and sensors, the system detects lane markings on the road and gently steers the car if it starts to drift out of its lane without signaling. LKA provides subtle steering corrections to prevent unintentional lane departures, enhancing safety, especially during long highway drives or when driver attention wanes.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="/static/resourceslane.jpg" alt="Lane Keeping Assist" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Adaptive Cruise Control -->
+        <section id="Adaptive-Cruise" class="mb-4">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Adaptive Cruise Control <span class="text-body-secondary"></span></h2>
+                    <p class="lead">Adaptive Cruise Control (ACC) is a smart driving feature that automatically adjusts a car's speed to maintain a safe distance from the vehicle ahead. Unlike traditional cruise control, which maintains a set speed, ACC uses radar or cameras to monitor traffic conditions and slow down or accelerate as needed to keep a pre-set distance. It can brake or speed up the car based on the flow of traffic, providing a more relaxed driving experience.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="/static/resourcesadap.avif" alt="Description of the image" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Rearview Camera -->
+        <section id="Lane-Keeping" class="mb-4">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1"> Rearview camera <span class="text-body-secondary"></span></h2>
+                    <p class="lead">A rearview camera, also known as a backup camera, is a safety feature in cars that provides a live video feed of the area directly behind the vehicle when reversing. The camera, typically mounted at the back, helps drivers see blind spots that mirrors might miss, making parking and maneuvering in tight spaces easier and safer. It often includes guidelines to assist with aligning the vehicle properly. Rearview cameras reduce the risk of accidents, especially by improving visibility of obstacles, pedestrians, or other vehicles while backing up.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="/static/resourcescame.jpg" alt="Lane Keeping Assist" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Airbags -->
+        <section id="Airbags-car" class="mb-4">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Airbags <span class="text-body-secondary"></span></h2>
+                    <p class="lead">Airbags are crucial safety devices in cars designed to protect occupants during collisions. They deploy instantly upon impact, inflating to cushion the driver and passengers, reducing the risk of serious injury by preventing direct contact with hard surfaces like the steering wheel, dashboard, or windows. Modern vehicles are equipped with multiple airbags, including front, side, and curtain airbags, providing comprehensive protection in various types of crashes.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="/static/resourcesair.jpg" alt="Airbagsimage" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Role of NHTSA -->
+        <section id="role" class="mb-5">
+            <h2 class="section-title">Role of NHTSA in Automobile Safety</h2>
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <p class="lead">NHTSA plays a crucial role in automobile safety through the following initiatives:</p>
+                    <ul>
+                        <li><strong>Vehicle Safety Standards:</strong> NHTSA establishes vehicle safety performance standards and requires manufacturers to recall vehicles that have safety defects.</li>
+                        <li><strong>Crash Testing:</strong> The agency conducts crash tests on vehicles and publishes safety ratings to inform consumers.</li>
+                        <li><strong>Road Safety Campaigns:</strong> NHTSA runs nationwide campaigns such as "Click It or Ticket" to encourage seatbelt use and reduce fatalities.</li>
+                        <li><strong>Research and Innovation:</strong> NHTSA conducts research into new technologies, such as automated driving systems, to improve vehicle safety.</li>
+                        <li><strong>Driver Safety Programs:</strong> The agency works with local governments to promote driver safety programs, focusing on impaired driving, speeding, and more.</li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <img src="/static/resourcesnhta.jpg" alt="NHTSA Role in Safety" class="featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Road Safety Initiatives -->
+        <section id="road-safety-initiatives" class="mb-5">
+            <h2 class="section-title">NHTSA's Road Safety Initiatives</h2>
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <p class="lead">NHTSA's mission to reduce accidents and fatalities extends beyond vehicle safety. The agency collaborates with various stakeholders to promote safe driving practices. Key initiatives include:</p>
+                    <ul>
+                        <li><strong>Drunk Driving Prevention:</strong> NHTSA runs campaigns like "Drive Sober or Get Pulled Over" to combat impaired driving.</li>
+                        <li><strong>Speeding Prevention:</strong> Speeding is a leading cause of accidents, and NHTSA advocates for speed limits and driver education programs.</li>
+                        <li><strong>Pedestrian and Bicycle Safety:</strong> The agency works to improve infrastructure and awareness to protect vulnerable road users like pedestrians and cyclists.</li>
+                        <li><strong>Distracted Driving:</strong> NHTSA's "U Drive. U Text. U Pay." campaign educates drivers about the dangers of distracted driving.</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="/static/resourcessafety.jpg" alt="Road Safety Initiatives" class="featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Future Technologies -->
+        <section id="future-technologies" class="mb-5">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1"> Future of Automobile Safety <span class="text-body-secondary"></span></h2>
+                    <p class="lead">NHTSA is at the forefront of researching and promoting future safety technologies. Some of the key innovations include:</p>
+                    <ul>
+                        <li><strong>Autonomous Vehicles:</strong> NHTSA is working on regulations and guidelines for self-driving cars to ensure safety on the roads.</li>
+                        <li><strong>Advanced Driver Assistance Systems (ADAS):</strong> Technologies like adaptive cruise control, lane departure warnings, and emergency braking are becoming standard in many new vehicles.</li>
+                        <li><strong>Vehicle-to-Vehicle Communication:</strong> NHTSA is exploring technologies that enable cars to communicate with each other to prevent accidents and improve traffic flow.</li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <img src="/static/resourcesfuture.jpg" alt="Lane Keeping Assist" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer1') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
