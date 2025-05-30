@@ -8,6 +8,12 @@
 - HTML
 - Node.js
 - Express.js
+- React
+- Tailwind
+- Mongodb
+- PUG
+- Django
+  
 
 ---
 
