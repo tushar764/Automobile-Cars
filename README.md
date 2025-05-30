@@ -1,39 +1,79 @@
-#Output![img3](https://github.com/user-attachments/assets/25e9a4f5-3d17-4226-9cfa-0b97dfdb531a)
-![img4](https://github.com/user-attachments/assets/47926916-03db-472b-a5cf-0606a1751fcb)
-![img5](https://github.com/user-attachments/assets/1b326136-dcf5-4300-b586-21bec8be203f)
-![img6](https://github.com/user-attachments/assets/03be3682-b5ef-47fd-a127-ccaed743a284)
-🚗 Automobile System
-Project Overview
-The Automobile System is a web application that provides detailed information about various cars while ensuring secure user authentication using Two-Factor Authentication (2FA). It implements a robust login and registration system with  enhanced security.
+<h1 align="center">Hi 👋, I'm TUSHAR SAIN</h1>
+<h3 align="center">🚗 Automobiles of Cars - Full Stack Developer</h3>
 
-Key Features
-✅ Secure Authentication – Ensures user identity verification before granting access.
-✅ User Management – Supports secure login and registration with Two-Factor Authentication.
-✅ Car Descriptions – Displays detailed information about different cars.
+---
 
-Components
-User Registration & Authentication
-Secure login with 2FA authentication.
-Backend Development (Express.js & Node.js)
-Uses Express.js to manage API routes for authentication.
-Encrypts user credentials for added security.
-Frontend Development (HTML, CSS, JavaScript)
-Built with HTML, CSS, and JavaScript for a smooth and interactive user experience.
-Uses form handling for user input validation and authentication flow.
-Database (MongoDB)
-Stores user data securely using MongoDB.
-Ensures data integrity with proper validation and encryption techniques.
-Security Enhancements
-🔒 bcrypt.js for password hashing.
-🔒 JWT (JSON Web Token) for secure user authentication.
-🔒 Middleware Authentication to prevent unauthorized access.
-Future Enhancements
-🔹 Implement SMS-based OTP verification.
-🔹 Add multi-user roles with different authentication levels.
+### 💬 Ask Me About
 
-Tech Stack
-📌 Frontend: HTML, CSS, JavaScript
-📌 Backend: Node.js, Express.js
-📌 Database: MongoDB
-📌 Security: JWT, bcrypt.js
+- HTML
+- Node.js
+- Express.js
 
+---
+
+### 🔗 Connect with Me
+
+<!-- Add links -->
+<p align="left">
+  <a href="mailto:saintushar148@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/jake" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://github.com/tushar764" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
+</p>
+
+---
+
+### 🚀 Project: Automobile System Overview
+
+> A web application that provides detailed information about various cars while ensuring secure user authentication using Two-Factor Authentication (2FA).
+
+#### 🔑 Key Features
+
+- ✅ **Secure Authentication** – 2FA-enabled login system
+- ✅ **User Management** – Registration, login with validation
+- ✅ **Car Descriptions** – View detailed info about each car
+
+#### 🧩 Components
+
+- **User Registration & 2FA Login**
+- **Backend** – Express.js & Node.js with encrypted routes
+- **Frontend** – HTML, CSS, JavaScript UI
+- **Database** – MongoDB with encrypted user storage
+
+---
+
+### 🔐 Security Implementations
+
+- **bcrypt.js** – For password hashing
+- **JWT** – JSON Web Tokens for session authentication
+- **Middleware** – To protect private routes
+
+---
+
+### 📈 Future Enhancements
+
+- 🔹 SMS-based OTP verification
+- 🔹 Role-based access control (Admin/User)
+
+---
+
+### 💻 Tech Stack
+
+| Frontend | Backend | Database | Security |
+|----------|---------|----------|----------|
+| HTML, CSS, JavaScript | Node.js, Express.js | MongoDB | JWT, bcrypt.js |
+
+---
+
+### 🛠️ Languages and Tools
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" width="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" width="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" width="40" />
+  <!-- Add others if truly needed -->
+</p>
